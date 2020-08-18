@@ -253,7 +253,7 @@ Public Class ffmpegEnc
                     ret += " -hwaccel dxva2"
                 Case "cuvid"
                     sourcePath = p.LastOriginalSourceFile
-                    ret += " -hwaccel cuvid"
+                    ret += " -hwaccel_output_format cuda"
             End Select
 
             If sourcePath.Ext = "vpy" Then
